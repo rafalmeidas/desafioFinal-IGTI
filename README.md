@@ -1,5 +1,5 @@
 <h1 align="center">
-  Desafio Nº 2 - Eleições dos Heróis
+  Desafio Final - Classificação do Campeonato Brasileiro de Futebol
 </h1>
 
 ## 🚀 Tecnologias
