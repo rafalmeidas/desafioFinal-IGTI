@@ -56,7 +56,7 @@ export default function getClassificacaoPorAnoEndpoint() {
           m.set(
             p.mandante,
             novoLista.push({
-              mandante: p.mandante,
+              time: p.mandante,
               vitorias: p.pontuacao_geral_mandante.total_vitorias,
               empates: p.pontuacao_geral_mandante.total_empates,
               derrotas: p.pontuacao_geral_mandante.total_derrotas,
@@ -109,7 +109,7 @@ export default function getClassificacaoPorAnoEndpoint() {
           m.set(
             p.visitante,
             novoLista.push({
-              visitante: p.visitante,
+              time: p.visitante,
               vitorias: p.pontuacao_geral_visitante.total_vitorias,
               empates: p.pontuacao_geral_visitante.total_empates,
               derrotas: p.pontuacao_geral_visitante.total_derrotas,
