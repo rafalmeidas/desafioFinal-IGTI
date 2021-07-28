@@ -121,6 +121,20 @@ export default function getClassificacaoPorAnoEndpoint() {
         }
       }
     }
-    return novoLista;
+    let newArray = [];
+    for (let time of novoLista) {
+      newArray.push({ ...time, saldo_gols: time.gols_pro - time.gols_contra });
+    }
+    newArray.sort((a, b) => {
+      if (a.pontos < b.pontos) {
+        return 1;
+      }
+      if (a.pontos > b.pontos) {
+        return -1;
+      }
+      return 0;
+    });
+
+    return newArray;
   });
 }
