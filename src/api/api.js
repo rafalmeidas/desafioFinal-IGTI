@@ -135,6 +135,8 @@ export default function getClassificacaoPorAnoEndpoint() {
       return 0;
     });
 
+    //Falta ordenar por mais tipos
+
     return newArray;
   });
 }
